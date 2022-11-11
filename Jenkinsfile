@@ -9,6 +9,28 @@ pipeline {
                                 git 'https://github.com/riadhmars/CDProjet.git'
                         }
 }
+stage('Build'){
+    steps {
+
+          script{
+          sh "npm install --force"
+          sh "ansible-playbook ansible/build.yml -i ansible/inventory/host.yml"
+}
+
+
+}
+}
+
+stage('DockerImage'){
+    steps {
+
+          script{
+          sh "ansible-playbook ansible/docker.yml -i ansible/inventory/host.yml"
+}
+
+
+}
+}
 
 stage('Push to Dockerhub'){
     steps {
@@ -20,5 +42,6 @@ stage('Push to Dockerhub'){
 
 }
 }
+
   }
 }
