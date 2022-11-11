@@ -13,7 +13,7 @@ pipeline {
     steps {
 
           script{
-          sh "npm install --legacy-pear-deps"
+          sh "npm install --force"
           sh "ansible-playbook ansible/build.yml -i ansible/inventory/host.yml"
 }
 
