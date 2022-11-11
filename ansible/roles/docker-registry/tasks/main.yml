@@ -1,0 +1,13 @@
+---
+# tasks file for docker-registry
+- name: login dockerhub
+  docker_login:
+    email: "riadh.mars@esprit.tn"
+    username: "riadhmars"
+    password: "marsmars2022"
+- name: push to dockerhub
+  docker_image:
+    name: appfront:latest
+    repository: riadhmars/frontprojet
+    push: yes
+    source: local
