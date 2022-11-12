@@ -21,4 +21,3 @@ stage('Deploying App to Kubernetes') {
 }
 
   }
-}
