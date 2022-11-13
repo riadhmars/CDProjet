@@ -18,7 +18,7 @@ spec:
       - name: nodeserver
         image: riadhmars/frontprojet:latest
         ports:
-        - containerPort: 4201
+        - containerPort: 4200
         
         
 ---
@@ -34,5 +34,5 @@ spec:
   ports:
   - protocol: TCP
     port: 5000
-    targetPort: 4201
+    targetPort: 4200
     nodePort: 31110
