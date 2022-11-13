@@ -6,7 +6,7 @@
     password: "marsmars2022"
 - name: push to dockerhub
   docker_image:
-    name: appfront:latest
+    name: nodeapp:latest
     repository: riadhmars/frontprojet
     push: yes
     source: local
