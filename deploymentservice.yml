@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: nodeserver
-        image: nodeapp:latest
+        image: riadhmars/frontprojet:latest
         ports:
         - containerPort: 4200
         

@@ -7,6 +7,6 @@
 - name: push to dockerhub
   docker_image:
     name: nodeapp:latest
-    repository: riadhmars/nodeapp
+    repository: riadhmars/frontprojet
     push: yes
     source: local
