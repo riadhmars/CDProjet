@@ -57,4 +57,4 @@ stage('Run containes for monitoring'){
            }
 }
   }
-}i
+}
