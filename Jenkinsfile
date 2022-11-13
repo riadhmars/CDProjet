@@ -49,12 +49,5 @@ stage('Deploy to Kubernetes') {
         }
       }
     }
-stage('Monitoring'){
-     steps {
-         script{
-                sh "docker-compose up -d"
-                }
-           }
-}
   }
 }
